@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RodrigodosSantosCard\\source\\repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj": {}
+    "C:\\Users\\RodrigodosSantosCard\\Source\\Repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RodrigodosSantosCard\\source\\repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj": {
+    "C:\\Users\\RodrigodosSantosCard\\Source\\Repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RodrigodosSantosCard\\source\\repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj",
+        "projectUniqueName": "C:\\Users\\RodrigodosSantosCard\\Source\\Repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj",
         "projectName": "MinimalApi",
-        "projectPath": "C:\\Users\\RodrigodosSantosCard\\source\\repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj",
+        "projectPath": "C:\\Users\\RodrigodosSantosCard\\Source\\Repos\\MinimalApi.git.rodrigo.s..cardozo\\MinimalApi.csproj",
         "packagesPath": "C:\\Users\\RodrigodosSantosCard\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RodrigodosSantosCard\\source\\repos\\MinimalApi.git.rodrigo.s..cardozo\\obj\\",
+        "outputPath": "C:\\Users\\RodrigodosSantosCard\\Source\\Repos\\MinimalApi.git.rodrigo.s..cardozo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
