@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using MinimalApi.Domain.DTO;
+using MinimalApi.Infrastructure.Db;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +11,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("MyPostgres"));
+});
+
 var app = builder.Build();
+
+app.MapPost("/login", (LoginDTO login) => { 
+    if(login.Email == "rodric@teste.com" && login.Password == "123456")
+        return Results.Ok("Login successful");
+    else
+        return Results.Unauthorized();
+});
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
