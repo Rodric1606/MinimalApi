@@ -272,3 +272,4 @@ C:\Users\RodrigodosSantosCard\source\repos\MinimalApi.git.rodrigo.s..cardozo\obj
 C:\Users\RodrigodosSantosCard\source\repos\MinimalApi.git.rodrigo.s..cardozo\obj\Debug\net8.0\MinimalApi.pdb
 C:\Users\RodrigodosSantosCard\source\repos\MinimalApi.git.rodrigo.s..cardozo\obj\Debug\net8.0\MinimalApi.genruntimeconfig.cache
 C:\Users\RodrigodosSantosCard\source\repos\MinimalApi.git.rodrigo.s..cardozo\obj\Debug\net8.0\ref\MinimalApi.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi.git.rodrigo.s..cardozo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
