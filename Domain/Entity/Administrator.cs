@@ -19,14 +19,15 @@ namespace MinimalApi.Domain.Entity
 
         [StringLength(50)]
         public string Perfil { get; set; }
-        public Administrator(int id, string name, string email, string password, string perfil)
+
+        public Administrator() { }
+
+        public Administrator(string name, string email, string password, string perfil)
         {
-            Id = id;
             Name = name;
             Email = email;
             Password = password;
             Perfil = perfil;
         }
-        public Administrator() { }
     }
 }

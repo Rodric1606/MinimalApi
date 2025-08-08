@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MinimalApi.Domain.DTO;
+using MinimalApi.Domain.Service;
 using MinimalApi.Infrastructure.Db;
+using MinimalApi.Infrastructure.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<iAdminService, AdminService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -18,8 +22,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
-app.MapPost("/login", (LoginDTO login) => { 
-    if(login.Email == "rodric@teste.com" && login.Password == "123456")
+
+app.MapPost("/login", ([FromBody] LoginDTO login, iAdminService adminService) => { 
+    if(adminService.Login(login) != null)
         return Results.Ok("Login successful");
     else
         return Results.Unauthorized();
