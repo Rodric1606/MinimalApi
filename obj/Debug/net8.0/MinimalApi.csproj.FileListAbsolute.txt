@@ -411,3 +411,13 @@ C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\obj\Debug\net8.0\MinimalAp
 C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\obj\Debug\net8.0\MinimalApi.genruntimeconfig.cache
 C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\obj\Debug\net8.0\ref\MinimalApi.dll
 C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\MinimalApis.Extensions.dll
+C:\Users\RodrigodosSantosCard\Source\Repos\MinimalApi\bin\Debug\net8.0\MiniValidation.dll
