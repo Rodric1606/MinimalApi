@@ -1,11 +1,11 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "MinimalApi",
-    "version": "1.0"
+    "title": "Minha API",
+    "version": "v1"
   },
   "paths": {
-    "/login": {
+    "/Administradores/login": {
       "post": {
         "tags": [
           "Administrador"
@@ -27,6 +27,73 @@
         }
       }
     },
+    "/CadastrarUsuário": {
+      "post": {
+        "tags": [
+          "Administrador"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdministratorDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/ConsultaListaUsuários": {
+      "post": {
+        "tags": [
+          "Administrador"
+        ],
+        "parameters": [
+          {
+            "name": "pagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/BuscarUsuarioPorId/{id}": {
+      "get": {
+        "tags": [
+          "Administrador"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/": {
       "get": {
         "tags": [
@@ -39,7 +106,7 @@
         }
       }
     },
-    "/Adicionar veiculo": {
+    "/AdicionarVeiculo": {
       "post": {
         "tags": [
           "Veículo"
@@ -165,30 +232,52 @@
   },
   "components": {
     "schemas": {
+      "AdministratorDTO": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "perfil": {
+            "$ref": "#/components/schemas/Perfil"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDTO": {
         "type": "object",
         "properties": {
           "email": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "password": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false
+      },
+      "Perfil": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "VeiculoDTO": {
         "type": "object",
         "properties": {
           "nome": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "marca": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "ano": {
             "type": "integer",
